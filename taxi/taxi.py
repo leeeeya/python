@@ -33,5 +33,5 @@ mean = hollyday.merge(weekday, on='borough')\
 pickups_by_mon_bor = taxi.groupby(['borough', 'pickup_month'], as_index=False) \
                      .agg({'pickups': 'sum'}).sort_values('pickups', ascending=False)
 
-print(pickups_by_mon_bor)
+print(mean)
 # print(group_borough)
